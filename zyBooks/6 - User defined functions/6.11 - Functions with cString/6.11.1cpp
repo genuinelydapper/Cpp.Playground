@@ -2,17 +2,14 @@
 #include <cstring>
 using namespace std;
 
-// Function replaces spaces with hyphens
-void StrSpaceToHyphen(char modString[]) {
-   int i = 0;  // Loop index
-
-   for (i = 0; i < strlen(modString); ++i) {
-      if (modString[i] == ' ') {
-         modString[i] = '-';
-      }
+void MakeSentenceExcited(char* sentenceText) {
+   int i=0;
+   for (i = 0; i < strlen(sentenceText); ++i) {
+      if (sentenceText[i] == '.') {
+         sentenceText[i] = '!';
+      }/* Your solution goes here  */
    }
 
-   return;
 }
 
 int main() {
